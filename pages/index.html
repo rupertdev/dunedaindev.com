@@ -1,0 +1,14 @@
+<head>
+  <title>{{.Title}}</title>
+  <link rel="stylesheet" type="text/css" href="../static/styles/common.css">
+</head>
+{{.Nav}}
+
+<body>
+  <h2>Posts</h2>
+  <ol>
+    {{range .Posts}}
+    <li><a href="{{.URL}}">{{.Title}}</a></li>
+    {{end}}
+  </ol>
+</body>
